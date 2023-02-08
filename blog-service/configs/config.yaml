@@ -1,0 +1,22 @@
+Server:
+  RunMode: debug  # debug, release
+  HttpPort: 8000  # 服务启动端口
+  ReadTimeout: 60 # 读取超时时间
+  WriteTimeout: 60  # 写入超时时间
+App:
+  DefaultPageSize: 10 # 默认分页大小
+  MaxPageSize: 100  # 最大分页大小
+  LogSavePath: storage/logs # 日志保存路径
+  LogFileName: app  # 日志文件名
+  LogFileExt: .log  # 日志文件扩展名
+Database:
+  DBType: mysql # 数据库类型
+  Username: root  # 填写你的数据库账号
+  Password: root  # 填写你的数据库密码
+  Host: 127.0.0.1:3306
+  DBName: blog_service
+  TablePrefix: blog_
+  Charset: utf8
+  ParseTime: True
+  MaxIdleConns: 10  # 最大空闲连接数
+  MaxOpenConns: 30  # 最大连接数
