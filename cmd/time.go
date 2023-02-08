@@ -49,7 +49,7 @@ var calculateTimeCmd = &cobra.Command{
 				layout = "2006-01-02"
 			}
 			if space == 1 {
-				layout = "2006-01-02 15:04:04"
+				layout = "2006-01-02 15:04:05"
 			}
 			currentTimer, err = time.Parse(layout, calculateTime)
 			if err != nil {
